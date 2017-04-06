@@ -100,6 +100,10 @@ textarea {
   padding: 0;
 }
 
+.navdesk {
+  display: none;
+}
+
 header {
   display: flex;
 justify-content: space-around;
@@ -111,7 +115,6 @@ box-shadow: 4px 4px 4px lightgrey;
 
 figure {
   margin: 0em 0px;
-width: 71%;
 display: flex;
 justify-content: center;
 }
@@ -135,11 +138,13 @@ nav {
 nav ul {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
 nav ul li{
   padding: 3 12px;
+  margin-top: 4px;
 }
 
 li {
@@ -160,6 +165,195 @@ ul li:hover{
   color: white;
 }
 
+
+#prez {
+  font-size: 10px;
+}
+
+.container {
+
+align-items: flex-start;
+flex-direction: column;
+margin: 5% 0 5% 0%;
+}
+
+.container .chaussette {
+  width: 45%;
+  height: auto;
+}
+
+.container .prix, .container2 .prix,{
+  border: 0px solid #F1ECEF;
+  background-color: #F1ECEF;
+  border-radius: 5px;
+  font-size: 10px;
+padding: .9em;
+margin-left: 38%;
+}
+
+.containerDesk {
+  display: none;
+}
+
+.chaussette .legende {
+  align-items: center;
+}
+
+.container .legende, .container2 .legende {
+
+font-size: 12px;
+width: 46%;
+font-style: oblique;
+text-align: center;
+}
+.jedecouvre {
+  width: 90%;
+  height: auto;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+
+.container2 .prix {
+  margin-left: 64%;
+}
+.figure2 {
+  width: 48%;
+  display: flex;
+flex-direction: column;
+}
+
+.figure2 .chaussette {
+  width: 80%;
+}
+
+.figure2 .legende {
+  width: 81%;
+  font-size: 9px;
+}
+
+@media (min-width: 768px){
+
+  .navdesk {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  .nav1 {
+    margin-left: 5%;
+
+  }
+
+  .nav2 {
+    margin-left: 0;
+  }
+
+  .container {
+    margin-left: 6%;
+  }
+
+  .mycontainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container .prix {
+    margin-left: 68%;
+  }
+
+  .container .chaussette {
+    width: 85%;
+  }
+
+  .container .legende {
+    width: 81%;
+  }
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .containerDesk {
+    display: none;
+  }
+
+  .figure2 {
+    width: 33%;
+    display: flex;
+  flex-direction: column;
+  }
+
+}
+
+@media (min-width: 992px){
+
+  .navdesk {
+    display: flex;
+    height: 164px;
+    background-color: #EFEFF0;
+    box-shadow: none;
+  }
+
+  .mycontainer {
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+  }
+
+  .container {
+    width: 17%;
+    margin: auto;
+  }
+
+  .figure2 {
+    width: 24%;
+    display: flex;
+  flex-direction: column;
+  }
+.containerDesk {
+
+  display: flex;
+width: 29%;
+align-items: center;
+flex-direction: column;
+margin-right: 6%;
+  }
+
+  .containerDesk .prix {
+    margin-left: 56%;
+  }
+
+
+
+  .containerDesk .legende {
+    font-size: 12px;
+font-style: oblique;
+  }
+
+  .nav {
+    display: flex;
+justify-content: flex-end;
+width: 6%;
+position: fixed;
+right: 13px;
+  }
+
+  .navmob {
+    display: none;
+  }
+
+  .navdesk {
+
+  }
+}
 
 /* ==========================================================================
    Helper classes
