@@ -297,9 +297,58 @@ flex-direction: column;
 
   .navdesk {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     height: 164px;
     background-color: #EFEFF0;
     box-shadow: none;
+  }
+
+  .logodesk {
+    margin-top: 10%;
+  }
+
+  .navdesk nav {
+    display: flex;
+    margin-top: 17%;
+  }
+
+  .navdesk nav ul {
+    list-style-type: none;
+    background-color: none;
+  }
+  .navdesk nav ul li {
+    border: none;
+  background-color: #EFEFF0;
+  }
+
+  .navdesk nav ul #shop {
+    background-color: white;
+  }
+
+  .navdesk nav ul li:hover {
+  background-color: white;
+  }
+
+  }
+
+
+
+  span {
+    font-size: 7px;
+    color: #B9758A;
+    background-color: #FCE0DD;
+    position: absolute;
+    padding: 4px;
+    top: 26px;
+    right: 50.5%;
+  }
+
+  .navdesk nav ul li a {
+    border: none;
+    color: black;
+
+    text-decoration: none;
   }
 
   .mycontainer {
@@ -350,9 +399,90 @@ right: 13px;
     display: none;
   }
 
-  .navdesk {
-
+  .navdesk #navpink {
+    width: 20%;
+  margin-left: 15%;
+  margin-top: 0%;
+  background-color: #FDEBE9;
   }
+
+  .navdesk #navpink ul li {
+    background-color: #FDEBE9;
+  }
+
+  #navpink ul #frais {
+    font-size: 8px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+bottom: 15px;
+  }
+
+  #navpink ul #prod {
+    width: 100%;
+text-align: center;
+font-size: 15px;
+height: 19px;
+position: relative;
+z-index: 2;
+color: #B35860;
+  }
+
+  #navpink ul #prod a {
+    color: #B35860;
+  }
+
+  em {
+    font-size: 33px;
+  }
+  #navpink ul li:hover {
+    background-color: #FDEBE9;
+}
+
+#navpink ul {
+position: relative;
+}
+
+#navpink ul #bordure {
+  position: absolute;
+  top: 92px;
+  width: 89%;
+}
+
+#bienvenue {
+  width: 71%;
+text-align: right;
+color: #B35860;
+font-size: 8px;
+}
+
+#bienvenue a {
+color: #B35860;
+font-size: 8px;
+text-decoration: underline;
+}
+
+
+#navpink ul #bordure img {
+  width: 106%;
+position: absolute;
+right: -7px;
+}
+
+#langue a {
+  font-size: 9px;
+color: white;
+background-color: #C47B81;
+padding: 2.5px 19px;
+position: absolute;
+top: 0px;
+}
+
+#navpink ul #rouleau img {
+  position: absolute;
+top: 52px;
+z-index: 2;
+}
 }
 
 /* ==========================================================================
