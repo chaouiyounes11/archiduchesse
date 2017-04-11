@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -15,6 +17,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -34,6 +37,7 @@ html {
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -47,20 +51,17 @@ hr {
     padding: 0;
 }
 
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
@@ -72,6 +73,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -79,6 +81,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -91,410 +94,565 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-*{
-  margin: 0;
-  padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .navdesk {
+    display: none;
+}
+
+.menuchaussette {
   display: none;
 }
 
 .navmob {
-  display: flex;
-justify-content: space-around;
-height: 75px;
-align-items: center;
-border-bottom: .1px solid silver;
-box-shadow: 4px 4px 4px lightgrey;
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    align-items: center;
+    border-bottom: .1px solid silver;
+    box-shadow: 4px 4px 4px lightgrey;
 }
 
 figure {
-  margin: 0em 0px;
-display: flex;
-justify-content: center;
+    margin: 0em 0px;
+    display: flex;
+    justify-content: center;
 }
 
 figure img {
-  width: 61%;
+    width: 61%;
 }
 
 h1 {
-  color: rgb(85, 85, 95);
-  font-size: 20px;
-margin-left: 5%;
+    color: rgb(85, 85, 95);
+    font-size: 20px;
+    margin-left: 5%;
 }
 
 nav {
-  font-size: 12px;
-  margin-left: 4%;
-  margin-bottom: 2%;
+    font-size: 12px;
+    margin-left: 4%;
+    margin-bottom: 2%;
 }
 
 .nav1 ul {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
 }
 
-nav ul li{
-  padding: 3 12px;
-  margin-top: 4px;
+nav ul li {
+    padding: 3 12px;
+    margin-top: 4px;
 }
 
 li {
-  border: .2px solid grey;
-  margin-right: 5px;
-  border-radius: 7px;
-  padding: 7px 13px;
-  background-color: rgb(229, 229, 234);
+    border: .2px solid grey;
+    margin-right: 5px;
+    border-radius: 7px;
+    padding: 7px 13px;
+    background-color: rgb(229, 229, 234);
 }
 
-ul li:hover{
-  background-color: rgb(74, 74, 76);
-  color: white;
+ul li:hover {
+    background-color: rgb(74, 74, 76);
+    color: white;
 }
 
 #toutes {
-  background-color: rgb(74, 74, 76);
-  color: white;
+    background-color: rgb(74, 74, 76);
+    color: white;
 }
 
-
 #prez {
-  font-size: 10px;
+    font-size: 10px;
 }
 
 .container {
-
-align-items: flex-start;
-flex-direction: column;
-margin: 5% 0 5% 0%;
+    flex-direction: column;
+    margin: 5% 0 9% 5%;
 }
 
 .container .chaussette {
-  width: 45%;
-  height: auto;
-}
-
-.container .prix, .container2 .prix,{
-  border: 0px solid #F1ECEF;
-  background-color: #F1ECEF;
-  border-radius: 5px;
-  font-size: 10px;
-padding: .9em;
-margin-left: 38%;
+    width: 36%;
+    height: auto;
 }
 
 .containerDesk {
-  display: none;
+    display: none;
 }
 
 .chaussette .legende {
-  align-items: center;
+    align-items: center;
+}
+
+#prix, .prix {
+    position: relative;
+    right: -28%;
+    font-size: 10px;
+    background-color: #F4F0F1;
+    padding: 2px 6px;
+    color: #A7B8DA;
+    width: 9%;
+}
+
+.prix {
+    right: -59%;
+    width: 20%;
 }
 
 .container .legende, .container2 .legende {
-
-font-size: 12px;
-width: 46%;
-font-style: oblique;
-text-align: center;
+    font-size: 12px;
+    width: 46%;
+    font-style: oblique;
+    text-align: center;
 }
+
+.container .legende {
+    width: 35%;
+}
+
+#jedecouvre {
+    margin: auto;
+    width: 90%;
+}
+
 .jedecouvre {
-  width: 90%;
-  height: auto;
+    width: 100%;
 }
 
 .container2 {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
 }
 
-.container2 .prix {
-  margin-left: 64%;
-}
 .figure2 {
-  width: 48%;
-  display: flex;
-flex-direction: column;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
 }
 
 .figure2 .chaussette {
-  width: 80%;
+    width: 80%;
 }
 
 .figure2 .legende {
-  width: 81%;
-  font-size: 9px;
-}
-
-@media (min-width: 768px){
-
-  .navdesk {
-    display: none;
-  }
-
-
-  .navmob {
-    display: flex;
-    margin-bottom: 12px;
-    width: 100%;
-  }
-
-  .nav1 {
-    margin-left: 5%;
-
-  }
-
-  .nav2 {
-    margin-left: 0;
-  }
-
-  .container {
-    margin-left: 6%;
-  }
-
-  .mycontainer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .container .prix {
-    margin-left: 68%;
-  }
-
-  .container .chaussette {
-    width: 85%;
-  }
-
-  .container .legende {
     width: 81%;
-  }
-  .container2 {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .containerDesk {
-    display: none;
-  }
-
-  .figure2 {
-    width: 33%;
-    display: flex;
-  flex-direction: column;
-  }
-
+    font-size: 9px;
 }
 
-@media (min-width: 992px){
-
-  .navdesk {
+#footermobile {
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
-    height: 164px;
-    background-color: #EFEFF0;
-    box-shadow: none;
-  }
+    height: 262px;
+}
 
-  .logodesk {
-    margin-top: 10%;
-  }
-
-  .navdesk nav {
+#footermobile .figmobile {
+    width: 34%;
     display: flex;
-    margin-top: 17%;
-  }
+    flex-direction: column;
+    align-items: center;
+}
 
-  .navdesk nav ul {
-    display: flex;
-    list-style-type: none;
-    background-color: none;
-  }
-  .navdesk nav ul li {
-    border: none;
-  background-color: #EFEFF0;
-  }
+#footermobile figcaption {
+    font-size: 8px;
+    width: 50%;
+    text-align: center;
+    font-style: italic;
+    color: #A2B5DD;
+}
 
-  .navdesk nav ul #shop {
-    background-color: white;
-  }
+#footermobile figure img {
+    width: 51%;
+}
 
-  .navdesk nav ul li:hover {
-  background-color: white;
-  }
-
-  span {
-    font-size: 7px;
-    color: #B9758A;
-    background-color: #FCE0DD;
-    position: absolute;
-    padding: 4px;
-    top: 26px;
-    right: 53%;
-  }
-
-  .navdesk nav ul li a {
-    border: none;
-    color: black;
-
-    text-decoration: none;
-  }
-
-  .mycontainer {
-    display: flex;
-flex-wrap: wrap;
-justify-content: center;
-  }
-
-  .container {
-    width: 17%;
-    margin: auto;
-  }
-
-  .figure2 {
-    width: 24%;
-    display: flex;
-  flex-direction: column;
-  }
-.containerDesk {
-
-  display: flex;
-width: 29%;
-align-items: center;
-flex-direction: column;
-margin-right: 6%;
-  }
-
-  .containerDesk .prix {
-    margin-left: 56%;
-  }
-
-
-
-  .containerDesk .legende {
-    font-size: 12px;
-font-style: oblique;
-  }
-
-  .nav {
-    display: flex;
-justify-content: flex-end;
-width: 6%;
-position: fixed;
-right: 13px;
-  }
-
-  .navmob {
+#footermobile .footerpictures {
     display: none;
-  }
+}
 
-  .navdesk #navpink {
-    width: 20%;
-  margin-top: 0%;
-  background-color: #FDEBE9;
-  }
-
-  .navdesk #navpink ul li {
-    background-color: #FDEBE9;
-  }
-
-  #navpink ul #frais {
+#footermobile p {
     font-size: 8px;
     text-align: center;
-    width: 100%;
-    position: relative;
-bottom: 15px;
-  }
-
-  #navpink ul #prod {
-    width: 87%;
-text-align: center;
-font-size: 13px;
-height: 19px;
-position: relative;
-z-index: 2;
-color: #B35860;
-  }
-
-  #navpink ul #prod a {
-    color: #B35860;
-  }
-
-  em {
-    font-size: 33px;
-  }
-  #navpink ul li:hover {
-    background-color: #FDEBE9;
 }
 
-#navpink ul {
-  display: inline-block;
-position: relative;
+.footertab {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#navpink ul #bordure {
-  position: absolute;
-  top: 79px;
-  width: 89%;
+@media (min-width: 760px) {
+    .navdesk {
+        display: none;
+    }
+
+    .menuchaussette {
+      display: none;
+    }
+    article {
+        display: flex;
+        width: 100%;
+        height: 230px;
+    }
+    #jedecouvre {
+        width: 45%;
+    }
+    .jedecouvre {
+        width: 100%;
+    }
+    .navmob {
+        display: flex;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .nav1 {
+        margin-left: 5%;
+    }
+    .container {
+        margin: 5% 0 8% 7%;
+        width: 22%;
+    }
+    .container .chaussette {
+        width: 100%;
+    }
+    .mycontainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #prix {
+        right: -75%;
+        width: 17%;
+    }
+    .container .legende {
+        width: 96%;
+    }
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .containerDesk {
+        display: none;
+    }
+    .figure2 {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+    }
+    #footermobile .footerpictures {
+        display: flex;
+    }
+    .footertab {
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;@
+        justify-content: center;
+    }
+
+    .footertab figure {
+      border: 1px solid grey;
+      margin: 1%;
+    }
+
+    .footerpictures {
+      width: 34%;
+display: flex;
+flex-direction: column;
+align-items: center;
+    }
+
+    #footermobile p {
+      width: 100%;
+    }
+
+    input {
+      width: 44%;
+    }
 }
 
-#bienvenue {
-  width: 93%;
-text-align: right;
-color: #B35860;
-font-size: 8px;
+@media (min-width: 992px) {
+    .navdesk {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 164px;
+        background-color: #EFEFF0;
+        box-shadow: none;
+    }
+    .logodesk {
+        margin-top: 10%;
+    }
+    .navdesk nav {
+        display: flex;
+        margin-top: 17%;
+    }
+    .navdesk nav ul {
+        display: flex;
+        list-style-type: none;
+        background-color: none;
+    }
+    .navdesk nav ul li {
+        border: none;
+        background-color: #EFEFF0;
+    }
+    .navdesk nav ul #shop {
+        background-color: white;
+    }
+    .navdesk nav ul li:hover {
+        background-color: white;
+    }
+    span {
+        font-size: 7px;
+        color: #B9758A;
+        background-color: #FCE0DD;
+        position: absolute;
+        padding: 4px;
+        top: 26px;
+        right: 45.1%;
+    }
+    .navdesk nav ul li a {
+        border: none;
+        color: black;
+        text-decoration: none;
+    }
+    .mycontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article {
+        width: 60%;
+    }
+
+    .menuchaussette {
+      display: flex;
+      position: absolute;
+left: 8%;
+bottom: 47.2%;
+    }
+
+    .menublog {
+      bottom: 67.2%;
+    }
+
+    .sectionblog {
+      width: 65%;
+height: 350px;
+    }
+
+    .news {
+      display: block;
+    }
+
+    .news figure {
+      margin: 1em;
+      width: 100%;
+    }
+
+    .news figure img{
+      width: 100%;
+    }
+
+    .menuchaussette figure {
+      width: 21%;
+height: 52px;
+    }
+
+    .menuchaussette figure img {
+      width: 100%;
+    }
+    #jedecouvre {
+        width: 56%;
+    }
+    .container, .containerdesk {
+        width: 25%;
+        margin: auto;
+    }
+    .prix {
+        width: 11%;
+    }
+    .prixdesk {
+        position: relative;
+        right: -29%;
+        width: 9%;
+        font-size: 10px;
+        background-color: #F4F0F1;
+        padding: 2px 6px;
+        color: #A7B8DA;
+    }
+    .figure2 {
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerDesk {
+        display: flex;
+        width: 29%;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 6%;
+    }
+    .containerDesk .legende {
+        font-size: 12px;
+        font-style: oblique;
+    }
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 6%;
+        position: fixed;
+        right: 13px;
+    }
+    .navmob {
+        display: none;
+    }
+    .navdesk #navpink {
+        width: 20%;
+        margin-top: 0%;
+        margin-left: 0%;
+        background-color: #FDEBE9;
+    }
+    .navdesk #navpink ul li {
+        background-color: #FDEBE9;
+    }
+    #navpink ul #frais {
+        font-size: 8px;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        bottom: 15px;
+    }
+    #navpink ul #prod {
+        width: 87%;
+        text-align: center;
+        font-size: 13px;
+        height: 19px;
+        position: relative;
+        z-index: 2;
+        color: #B35860;
+    }
+    #navpink ul #prod a {
+        color: #B35860;
+    }
+    em {
+        font-size: 33px;
+    }
+    #navpink ul li:hover {
+        background-color: #FDEBE9;
+    }
+    #navpink ul {
+        display: inline-block;
+        position: relative;
+    }
+    #navpink ul #bordure {
+        position: absolute;
+        top: 94px;
+        width: 105%;
+    }
+    #bienvenue {
+        width: 107%;
+        text-align: right;
+        color: #B35860;
+        font-size: 8px;
+    }
+    #bienvenue a {
+        color: #B35860;
+        font-size: 8px;
+        text-decoration: underline;
+    }
+    #navpink ul #bordure img {
+        width: 107%;
+        position: absolute;
+        right: -7px;
+    }
+    #navpink ul #rouleau img {
+        width: 96%;
+        position: absolute;
+        top: 52px;
+        z-index: 2;
+    }
+    #menu-deroulant, #menu-deroulant ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    #menu-deroulant {
+        position: absolute;
+        top: 0%;
+        left: 71%;
+        z-index: 2;
+    }
+    #menu-deroulant li {
+        /* on place les liens du menu horizontalement */
+        display: inline-block;
+    }
+    #menu-deroulant ul li {
+        /* on enlève ce comportement pour les liens du sous menu */
+        display: inherit;
+    }
+    #menu-deroulant a {
+        text-decoration: none;
+        display: block;
+        color: white;
+        background-color: #C47B81;
+        padding: .1em;
+    }
+    #menu-deroulant ul {
+        position: absolute;
+        /* on cache les sous menus complètement sur la gauche */
+        left: -999em;
+        text-align: left;
+        z-index: 1000;
+    }
+    #menu-deroulant li:hover ul {
+        /* Au survol des li du menu on replace les sous menus */
+        left: auto;
+    }
+    #menu-deroulant .white a {
+        background-color: #E0B3B8;
+        color: white;
+        text-align: center;
+        padding: 1px 13px;
+        font-size: 8px;
+    }
+    .navdesk .deroulant #menu-deroulant ul, .navdesk .deroulant #menu-deroulant #fr {
+        background-color: #FDEBE9;
+    }
+    #fr {
+        padding: 3px 1px;
+    }
+    #fr:hover {
+        background-color: #FDEBE9;
+    }
+    #fr a {
+        padding: 1px 13px;
+        font-size: 8px;
+    }
+    .navdesk .deroulant #menu-deroulant ul {
+        display: block;
+        margin: 0;
+        background-color: none;
+    }
 }
 
-#bienvenue a {
-color: #B35860;
-font-size: 8px;
-text-decoration: underline;
-}
-
-
-#navpink ul #bordure img {
-  width: 106%;
-position: absolute;
-right: -7px;
-}
-
-#langue a {
-  font-size: 9px;
-color: white;
-background-color: #C47B81;
-padding: 2.5px 19px;
-position: absolute;
-top: 0px;
-}
-
-.langues a {
-  font-size: 9px;
-color: white;
-background-color: #C47B81;
-padding: 2.5px 19px;
-position: absolute;
-top: 0px;
-}
-
-#navpink ul #rouleau img {
-  position: absolute;
-top: 52px;
-z-index: 2;
-}
-}
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -503,6 +661,7 @@ z-index: 2;
 .hidden {
     display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -520,14 +679,14 @@ z-index: 2;
     width: 1px;
 }
 
+
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -536,6 +695,7 @@ z-index: 2;
     width: auto;
 }
 
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -543,6 +703,7 @@ z-index: 2;
 .invisible {
     visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -556,15 +717,17 @@ z-index: 2;
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -576,12 +739,10 @@ z-index: 2;
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -590,74 +751,52 @@ z-index: 2;
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
+    *, *:before, *:after, *:first-letter, *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
-
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
